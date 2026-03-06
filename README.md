@@ -13,9 +13,9 @@
 ## Script
 
 ```bash
-#!/bin/bash
+#!/bin/bash # interpretator bash
 
-if [ "$EUID" -ne 0 ]; then
+if [ "$EUID" -ne 0 ]; then # root check in script
 echo "Run this script with sudo!"
 exit 1
 fi
